@@ -1,0 +1,19 @@
+/* 调整 ul 中 a 标签的样式 */
+.body ul .about_1 ul li a {
+    display: flex; /* 设置为弹性布局 */
+    align-items: center; /* 垂直居中对齐图片和文字 */
+    text-decoration: none; /* 去除下划线 */
+    color: #0488e0; /* 设置文本颜色 */
+    margin: 0 5px; /* 设置外边距，确保 a 标签与其他元素之间有间距 */
+}
+
+.body ul .about_1 ul li a:hover {
+    color: #ffffff; /* 鼠标悬停时改变文本颜色 */
+}
+
+/* 图片对齐优化 */
+.body ul .about_1 ul li img {
+    margin-right: 10px; /* 图片和文字之间的间距 */
+    width: 40px; /* 增大图片，确保它们在页面中显得合适 */
+    height: auto; /* 保持图片比例 */
+}
