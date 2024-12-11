@@ -7,13 +7,10 @@ window.onload = function() {
     if (video) {
         // 视频播放时触发
         video.onplay = function() {
-            console.log('视频开始播放，1秒后显示页面内容');
-            // 设置1秒后执行的操作
-            setTimeout(function() {
-                // 隐藏loading，显示content
-                loading.style.visibility = 'hidden';  // 隐藏加载提示，但保持占位
-                content.style.visibility = 'visible'; // 显示页面内容
-            }, 1000); // 1秒后执行
+            console.log('视频开始播放，立即显示页面内容');
+            // 隐藏loading，显示content
+            loading.style.visibility = 'hidden';  // 隐藏加载提示，但保持占位
+            content.style.visibility = 'visible'; // 显示页面内容
         };
 
         // 处理视频加载错误
