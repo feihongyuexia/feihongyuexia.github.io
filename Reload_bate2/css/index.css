@@ -1,0 +1,99 @@
+
+.video video { /* 视频样式 */
+    width: 100%; /* 视频宽度 */
+    height: 100%; /* 视频高度 */
+    object-fit: cover; /* 视频填充方式 */
+    position: absolute; /* 绝对定位 */
+    top: 0; /* 顶部边距 */
+    left: 0; /* 左边距 */
+    z-index: -1; /* z-index 属性设置元素的堆叠顺序 */
+    object-position: 10%; /* 视频位置 */
+}
+/* --------------------------------------------- */
+
+.temp {
+    position: relative; /* 相对定位 */
+    display: flex; /* 弹性布局 */
+    justify-content: center; /* 水平居中 */
+    margin: 0 auto; /* 水平居中 */
+    width: 80%; /* 宽度 */
+    height: 100vh; /* 高度 */
+    filter:blur(2px); /* 模糊效果 */
+    opacity: 0.6; /* 设置透明度 */
+}
+/* --------------------------------------------- */
+.sanDi {
+    width: 300px; /* 宽度 */
+    height: 300px; /* 高度 */
+    position: relative; /* 相对定位 */
+    margin: 20px auto; /* 水平居中 */
+    transform-style: preserve-3d; /* 3D效果 */
+    transition: all 1.5s ease-in-out; /* 过渡效果 */
+
+}
+.sanDi:hover {
+    transform: rotateY(-270deg); /* 初始旋转角度 */
+}
+
+/* 四个面通用属性 */
+.sanDi > div {
+    position: absolute; /* 绝对定位 */
+    left: 0; /* 左边距 */
+    top: 0; /* 顶部边距 */
+    width: 300px; /* 宽度 */
+    height: 300px; /* 高度 */
+    text-align: center; /* 文字居中 */
+    line-height: 300px; /* 行高 */
+    font-size: 30px; /* 字体大小 */
+    font-weight: bold; /* 字体加粗 */
+    color: #fff; /* 文字颜色 */
+    border: 1px solid #fff; /* 边框 */
+}
+/* --------四个面---------- */
+.sanDi .qianMian {
+    background-color: #6395ce; /* 背景颜色 */
+    transform: translateZ(150px); /* 向前移动150px */
+}
+.sanDi .houMian {
+    background-color: #9556d1;
+    transform: translateZ(-150px); /* 向后移动150px */
+}
+.sanDi .left {
+    background-color: #df91f0; /* 背景颜色 */
+    /* 向左旋转90度并向前移动150px */
+    transform: rotateY(-90deg) translateZ(150px); 
+}
+.sanDi .rigth {
+    background-color: rgb(74, 79, 216); /* 背景颜色 */
+    /* 向右旋转90度并向前移动150px */
+    transform: rotateY(90deg) translateZ(150px); 
+}
+
+
+/* bootstrap样式 */
+/* 展开后文本背景颜色 */
+div.accordion-body {
+    background-color: rgba(86, 178, 240, 0.6);
+}
+/* 原始按钮背景 */
+button.accordion-button.collapsed {
+    background-color: #93d5e0;
+
+}
+
+.video h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    color: #fff;
+    font-size: 4em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+    background:-webkit-linear-gradient(top, #ffffff, #09a1f8); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+

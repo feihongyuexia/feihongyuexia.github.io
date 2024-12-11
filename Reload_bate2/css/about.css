@@ -1,0 +1,66 @@
+nav {
+    display: flex; /* 弹性布局 */
+    justify-content: center; /* 水平居右 */
+    align-items: center; /* 垂直居中 */
+    padding: 15px; /* 内边距 */
+    text-align: center; /* 文字居中 */
+    margin-top: 15px; /* 顶部外边距 */
+    /* background-color: #0FADF1; */
+}
+
+.about_body {
+    min-height: 100vh;
+    margin-top: 70px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+
+}
+.about_body .nei {
+    height: 70vh;   /* 设置高度 */
+    /* margin-top: 30px;  设置顶部外边距 */
+    background-color: rgba(255, 255, 255, 0.4); /* 设置背景颜色 */
+    backdrop-filter: blur(10px); /* 设置背景模糊效果 */
+    padding-top: 20px; /* 设置顶部内边距 */
+
+}
+.about_body .nei h3 {
+    text-align: center; /* 文字居中 */
+    font-size: 1.17em; /* 设置字体大小 */
+    padding-bottom: 15px; /* 设置底部内边距 */
+    margin: 0;
+}
+.about_body .nei p {
+    /* text-align: center; 文字居中 */
+    margin: 0 15px;
+}
+
+
+/* 关于我 微调 */
+.about_body .nei ul {
+    display: flex; /* 弹性布局 */
+    flex-direction: column; /* 垂直排列 */
+    margin-top: 20px;
+}
+.about_body .nei li {
+    list-style: none; /* 去掉列表样式 */
+    margin-bottom: 10px;
+
+}
+.about_body .nei li img {
+    width: 2.5vh;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .about_body .nei {
+        height: auto;   /* 设置高度 */
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .about_body .nei {
+        height: auto;   /* 设置高度 */
+        margin-top: 40px;
+
+    }
+   
+}
