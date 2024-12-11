@@ -108,19 +108,16 @@ footer a:hover {
 }
 
 /* 为了深色或夜间模式不改变颜色 */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     body {
         background: linear-gradient(
             130deg, #0FADF1, #cbcbcb
         );
     }
     nav a {
-        color: #red;
+        color: #000000; 
     }
     footer {
         color: #1D384A;
     }
-    footer a:hover {
-        color: #d8dfe7; /* 鼠标悬停颜色 */
-    }
-}
+} */
