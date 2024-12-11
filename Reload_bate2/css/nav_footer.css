@@ -107,16 +107,20 @@ footer a:hover {
     color: #d8dfe7; /* 鼠标悬停颜色 */
 }
 
-@media screen and (max-width: 768px) {
-    nav {
-        justify-content: center; /* 水平居中 */
+/* 为了深色或夜间模式不改变颜色 */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: linear-gradient(
+            130deg, #0FADF1, #cbcbcb
+        );
     }
-}
-
-@media screen and (max-width: 411px) {
-    nav {
-        align-items: center; /* 垂直居中 */
-        display: none; /* 隐藏导航栏 */
-        visibility: hidden; /* 隐藏导航栏 */
+    nav a {
+        color: #1D384A;
+    }
+    footer {
+        color: #1D384A;
+    }
+    footer a:hover {
+        color: #d8dfe7; /* 鼠标悬停颜色 */
     }
 }

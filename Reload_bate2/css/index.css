@@ -87,13 +87,15 @@ button.accordion-button.collapsed {
     left: 50%;
     transform: translate(-50%, -50%);
     
-    color: #fff;
+    color: transparent; /* 使文字透明，为渐变提供支持 */
     font-size: 4em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 保持文字阴影 */
     
-    background:-webkit-linear-gradient(top, #ffffff, #09a1f8); 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* 使用渐变背景并为所有现代浏览器提供支持 */
+    background: linear-gradient(to top, #ffffff, #09a1f8);
+    -webkit-background-clip: text; /* Safari 和 Chrome 的支持 */
+    background-clip: text; /* 其他浏览器（如 Firefox）对 text 背景剪裁的支持 */
 }
+
 
 
