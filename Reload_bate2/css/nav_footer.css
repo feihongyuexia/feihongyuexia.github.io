@@ -115,10 +115,10 @@ footer a:hover {
         );
     }
     nav a {
-        color: #000;
+        color: #000000;
     }
     footer {
-        color: #000;
+        color: #1D384A;
     }
     footer a:hover {
         color: #d8dfe7; /* 鼠标悬停颜色 */
